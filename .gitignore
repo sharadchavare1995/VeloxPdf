@@ -12,6 +12,7 @@ artifacts/
 
 # NuGet packages (restored, not source)
 *.nupkg
+# NuGet Symbol Packages
 *.snupkg
 packages/
 
