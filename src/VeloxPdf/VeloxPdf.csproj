@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net7.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>VeloxPdf</RootNamespace>
+    <AssemblyName>VeloxPdf</AssemblyName>
+
+    <!-- NuGet metadata -->
+    <PackageId>VeloxPdf</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Momentive Software</Authors>
+    <Company>Momentive Software</Company>
+    <Description>Zero-dependency .NET PDF generation library. Generates production-quality PDFs from scratch using only the .NET BCL. Supports streaming generation of millions of records with minimal memory footprint.</Description>
+    <PackageTags>pdf;generation;dotnet;cross-platform;zero-dependency;streaming;high-performance</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/momentivesoftware/VeloxPdf</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/momentivesoftware/VeloxPdf</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+
+    <!-- Build settings -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+
+
+  <!-- Pack README and icon from nuget/ folder -->
+  <ItemGroup>
+    <None Include="..\..\nuget\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\..\nuget\icon.png"  Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+<!-- No PackageReference entries — zero external dependencies -->
+
+</Project>

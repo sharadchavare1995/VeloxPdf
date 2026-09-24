@@ -1,0 +1,17 @@
+PLACEHOLDER: Replace this file with a real 128x128 PNG icon before publishing to NuGet.
+
+Requirements:
+- File name: icon.png
+- Size: 128x128 pixels (NuGet gallery displays at 64x64 and 128x128)
+- Format: PNG (RGBA or RGB, 8-bit)
+- Content suggestion: "V" or "VP" monogram on a dark blue (#1E3A8A) background,
+  white text, rounded corners — matching the VeloxPdf brand colors used in templates.
+
+To create a minimal valid PNG programmatically, you can use the PngEncoder from
+VeloxPdf itself once the library is built, or use any image editor (Photoshop,
+GIMP, Canva, Figma) to export a 128x128 PNG.
+
+Remove this placeholder file and place icon.png in this directory before running:
+  nuget pack nuget/VeloxPdf.nuspec
+or:
+  dotnet pack src/VeloxPdf/VeloxPdf.csproj -c Release

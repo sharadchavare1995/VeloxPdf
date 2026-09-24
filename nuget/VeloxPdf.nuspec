@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>VeloxPdf</id>
+    <version>1.0.0</version>
+    <title>VeloxPdf</title>
+    <authors>Momentive Software</authors>
+    <owners>Momentive Software</owners>
+    <licenseExpression>MIT</licenseExpression>
+    <projectUrl>https://github.com/momentivesoftware/VeloxPdf</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Zero-dependency .NET PDF generation library. Generates production-quality PDFs from scratch
+      using only the .NET BCL — no QuestPDF, no iTextSharp, no SkiaSharp.
+      Features streaming generation of 2,000,000+ records with minimal memory footprint,
+      TrueType font embedding, PNG/JPEG image support, professional invoice/report/letter templates,
+      and full cross-platform support (Windows, Linux, macOS, Docker, ARM64, Azure Functions, AWS Lambda).
+    </description>
+    <releaseNotes>
+      v1.0.0 — Initial release.
+      - Zero external dependencies (BCL only)
+      - Streaming pipeline handles 2M+ rows with &lt;150MB RAM
+      - Parallel page rendering for maximum throughput
+      - Built-in invoice, report, and letter templates
+      - Type1 and TrueType font support
+      - JPEG and PNG image embedding
+      - FlateDecode (zlib) compression
+      - Full xref table and PDF 1.7 compliance
+      - Dependency injection extensions
+      - BenchmarkDotNet benchmarks included
+    </releaseNotes>
+    <copyright>Copyright (c) 2026 Momentive Software</copyright>
+    <tags>pdf generation dotnet cross-platform zero-dependency streaming high-performance documents invoice report</tags>
+    <repository type="git" url="https://github.com/momentivesoftware/VeloxPdf" />
+    <readme>README.md</readme>
+    <icon>icon.png</icon>
+    <dependencies>
+      <!-- Zero runtime dependencies for all targets -->
+      <group targetFramework="net8.0" />
+      <group targetFramework="net7.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\src\VeloxPdf\bin\Release\net9.0\VeloxPdf.dll"            target="lib\net9.0\VeloxPdf.dll" />
+    <file src="..\src\VeloxPdf\bin\Release\net9.0\VeloxPdf.xml"            target="lib\net9.0\VeloxPdf.xml" />
+    <file src="..\src\VeloxPdf\bin\Release\net8.0\VeloxPdf.dll"            target="lib\net8.0\VeloxPdf.dll" />
+    <file src="..\src\VeloxPdf\bin\Release\net8.0\VeloxPdf.xml"            target="lib\net8.0\VeloxPdf.xml" />
+    <file src="..\src\VeloxPdf\bin\Release\net7.0\VeloxPdf.dll"            target="lib\net7.0\VeloxPdf.dll" />
+    <file src="..\src\VeloxPdf\bin\Release\net7.0\VeloxPdf.xml"            target="lib\net7.0\VeloxPdf.xml" />
+    <file src="icon.png"    target="" />
+    <file src="README.md"   target="" />
+  </files>
+</package>

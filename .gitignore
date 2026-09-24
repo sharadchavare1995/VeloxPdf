@@ -1,0 +1,29 @@
+# Build outputs
+bin/
+obj/
+artifacts/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet packages (restored, not source)
+*.nupkg
+*.snupkg
+packages/
+
+# Rider / JetBrains
+.idea/
+*.DotSettings.user
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test results
+TestResults/
+*.trx
+*.coverage
