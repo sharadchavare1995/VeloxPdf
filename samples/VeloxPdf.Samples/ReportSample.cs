@@ -12,13 +12,13 @@ public static class ReportSample
             Metadata = new PdfMetadata
             {
                 Title = "Q3 2026 Business Performance Report",
-                Author = "Analytics Team",
+                Author = "Momentive Software",
                 Subject = "Quarterly business performance analysis"
             }
         };
 
         data.Properties["ReportTitle"] = "Q3 2026 Business Performance Report";
-        data.Properties["Author"] = "Analytics Team";
+        data.Properties["Author"] = "Momentive Software";
         data.Properties["Date"] = "September 11, 2026";
 
         var sections = new List<ReportSection>

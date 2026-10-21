@@ -12,14 +12,14 @@ public static class InvoiceSample
             Metadata = new PdfMetadata
             {
                 Title = "Invoice INV-2024-001",
-                Author = "Acme Corporation",
+                Author = "Momentive Software",
                 Subject = "Professional Services Invoice"
             }
         };
 
-        data.Properties["CompanyName"] = "Acme Corporation";
-        data.Properties["CompanyAddress"] = "1234 Business Ave, Suite 500, New York, NY 10001";
-        data.Properties["CompanyEmail"] = "billing@acme.com";
+        data.Properties["CompanyName"] = "Momentive Software";
+        data.Properties["CompanyAddress"] = "st Floor, Tower-B (B Wing), Panchshil Business Park, Viman Nagar, Pune, Maharashtra 411014, India";
+        data.Properties["CompanyEmail"] = "sharad.chavare@momentivesoftware.com";
         data.Properties["InvoiceNumber"] = "INV-2024-001";
         data.Properties["InvoiceDate"] = "September 11, 2026";
         data.Properties["DueDate"] = "October 11, 2026";
@@ -28,7 +28,7 @@ public static class InvoiceSample
         data.Properties["BillToEmail"] = "accounts@techinnovations.com";
         data.Properties["TaxLabel"] = "Sales Tax (8.5%)";
         data.Properties["PaymentTerms"] = "Net 30 days. Late payments subject to 1.5% monthly interest.";
-        data.Properties["ThankYouNote"] = "Thank you for choosing Acme Corporation. We value your business!";
+        data.Properties["ThankYouNote"] = "Thank you for choosing Momentive Software. We value your business!";
 
         var lineItems = new List<string[]>
         {
