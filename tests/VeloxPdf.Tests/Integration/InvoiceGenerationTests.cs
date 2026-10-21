@@ -83,7 +83,7 @@ public class InvoiceGenerationTests
     {
         var template = new InvoiceTemplate();
         var data = new TemplateData { Title = "Full Invoice" };
-        data.Properties["CompanyName"] = "Acme Corporation";
+        data.Properties["CompanyName"] = "Momentive Software";
         data.Properties["InvoiceNumber"] = "INV-2024-001";
         data.Properties["InvoiceDate"] = "Jan 1, 2024";
         data.Properties["DueDate"] = "Jan 31, 2024";

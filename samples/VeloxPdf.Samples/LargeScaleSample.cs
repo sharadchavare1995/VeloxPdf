@@ -57,7 +57,7 @@ public static class LargeScaleSample
             new PdfMetadata
             {
                 Title = $"{recordCount:N0} Record Report",
-                Author = "VeloxPdf LargeScaleSample",
+                Author = "Momentive Software",
                 Creator = "VeloxPdf 1.0"
             },
             schema);

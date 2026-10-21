@@ -38,7 +38,7 @@ dotnet add package VeloxPdf
 using VeloxPdf.Templates;
 
 var template = new InvoiceTemplate();
-var pdf = template.Build(new TemplateData { Properties = { ["CompanyName"] = "Acme Corp" } });
+var pdf = template.Build(new TemplateData { Properties = { ["CompanyName"] = "Momentive Software" } });
 await File.WriteAllBytesAsync("invoice.pdf", pdf.Save());
 ```
 
@@ -51,7 +51,7 @@ using VeloxPdf.Styling;
 
 var doc = PdfDocumentBuilder.Create()
     .WithTitle("My Report")
-    .WithAuthor("John Smith")
+    .WithAuthor("Momentive Software")
     .WithPageSize(PdfPageSize.A4)
     .WithMargins(PdfMargins.Default)
     .AddHeading("Annual Report 2026")
@@ -158,7 +158,7 @@ The root document object.
 ```csharp
 var doc = new PdfDocument
 {
-    Metadata = new PdfMetadata { Title = "My Doc", Author = "Jane" },
+    Metadata = new PdfMetadata { Title = "My Doc", Author = "Momentive Software" },
     DefaultPageSize = PdfPageSize.A4,
     DefaultMargins = PdfMargins.Default,
     DefaultFont = Type1Font.Helvetica,
@@ -333,9 +333,9 @@ var template = new InvoiceTemplate();
 var data = new TemplateData();
 
 // Company info
-data.Properties["CompanyName"]    = "Acme Corporation";
+data.Properties["CompanyName"]    = "Momentive Software";
 data.Properties["CompanyAddress"] = "123 Main St, New York, NY 10001";
-data.Properties["CompanyEmail"]   = "billing@acme.com";
+data.Properties["CompanyEmail"]   = "sharad.chavare@momentivesoftware.com";
 
 // Invoice details
 data.Properties["InvoiceNumber"]  = "INV-2024-001";
@@ -367,7 +367,7 @@ byte[] pdf = doc.Save();
 var template = new ReportTemplate();
 var data = new TemplateData { Title = "Q3 2026 Performance Report" };
 
-data.Properties["Author"] = "Analytics Team";
+data.Properties["Author"] = "Momentive Software";
 data.Properties["Date"]   = "September 30, 2026";
 
 data.Data["Sections"] = new List<ReportSection>
@@ -386,15 +386,15 @@ byte[] pdf = template.Build(data).Save();
 var template = new LetterTemplate();
 var data = new TemplateData();
 
-data.Properties["SenderName"]    = "Jane Smith";
+data.Properties["SenderName"]    = "Momentive Software";
 data.Properties["SenderTitle"]   = "CEO";
-data.Properties["SenderCompany"] = "My Company";
+data.Properties["SenderCompany"] = "Momentive Software";
 data.Properties["Date"]          = "September 11, 2026";
 data.Properties["RecipientName"] = "John Doe";
 data.Properties["Subject"]       = "Partnership Opportunity";
 data.Properties["Body"]          = "I am writing to propose...\n\nPlease consider...";
 data.Properties["Closing"]       = "Kind regards,";
-data.Properties["SignerName"]    = "Jane Smith";
+data.Properties["SignerName"]    = "Momentive Software";
 
 byte[] pdf = template.Build(data).Save();
 ```

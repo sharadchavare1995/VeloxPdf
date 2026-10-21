@@ -26,16 +26,16 @@ public static class MultiTemplateSample
             Metadata = new PdfMetadata
             {
                 Title = "Partnership Proposal",
-                Author = "John Smith"
+                Author = "Momentive Software"
             }
         };
 
-        data.Properties["SenderName"] = "John Smith";
+        data.Properties["SenderName"] = "Momentive Software";
         data.Properties["SenderTitle"] = "Chief Executive Officer";
-        data.Properties["SenderCompany"] = "Acme Corporation";
+        data.Properties["SenderCompany"] = "Momentive Software";
         data.Properties["SenderAddress"] = "1234 Business Ave, Suite 500";
         data.Properties["SenderCity"] = "New York, NY 10001";
-        data.Properties["SenderEmail"] = "john.smith@acme.com";
+        data.Properties["SenderEmail"] = "sharad.chavare@momentivesoftware.com";
         data.Properties["SenderPhone"] = "+1 (555) 123-4567";
         data.Properties["Date"] = "September 11, 2026";
         data.Properties["RecipientName"] = "Sarah Johnson";
@@ -46,7 +46,7 @@ public static class MultiTemplateSample
         data.Properties["Subject"] = "Strategic Partnership Proposal - VeloxPDF Integration";
         data.Properties["Body"] =
             "I hope this letter finds you well. I am writing to express our strong interest in " +
-            "establishing a strategic technology partnership between Acme Corporation and TechVentures Inc.\n\n" +
+            "establishing a strategic technology partnership between Momentive Software and TechVentures Inc.\n\n" +
             "After carefully reviewing your platform capabilities and market position, we believe there " +
             "is a compelling opportunity for mutual benefit through the integration of our VeloxPDF " +
             "document generation technology with your enterprise workflow platform.\n\n" +
@@ -57,8 +57,8 @@ public static class MultiTemplateSample
             "I would welcome the opportunity to schedule a technical demonstration at your earliest " +
             "convenience. Please feel free to contact me directly to arrange a suitable time.";
         data.Properties["Closing"] = "Yours sincerely,";
-        data.Properties["SignerName"] = "John Smith";
-        data.Properties["SignerTitle"] = "Chief Executive Officer, Acme Corporation";
+        data.Properties["SignerName"] = "Momentive Software";
+        data.Properties["SignerTitle"] = "Momentive Software";
 
         var template = new LetterTemplate();
         var doc = template.Build(data);
